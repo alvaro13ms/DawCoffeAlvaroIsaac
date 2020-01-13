@@ -10,5 +10,13 @@ package daw.coffee;
  * @author Isaac
  */
 public class Menu {
-    
+
+    //Creación de los atributos de los productos de la cafetera
+    private double CAFESOLO;
+    private double CAFESOLOLARGO;
+    private double CAFELECHE;
+    private double CORTADO;
+    private double CHOCOLATE;
+    private double LECHEFC;
+
 }
