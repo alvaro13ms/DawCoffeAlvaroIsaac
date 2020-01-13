@@ -12,12 +12,13 @@ package daw.coffee;
 public class Menu {
 
     //Creación de los atributos de los productos de la cafetera
-    private double CAFESOLO;
-    private double CAFESOLOLARGO;
-    private double CAFELECHE;
-    private double CORTADO;
-    private double CHOCOLATE;
-    private double LECHEFC;
+    //Precio de los productos de la cafetera
+    private double CAFESOLO=0.80;
+    private double CAFESOLOLARGO=0.90;
+    private double CAFELECHE=1.10;
+    private double CORTADO=1;
+    private double CHOCOLATE=1.40;
+    private double LECHEFC=0.50;
 
     //Creación del constructor de los atributos
     public Menu(double CAFESOLO, double CAFESOLOLARGO, double CAFELECHE, double CORTADO, double CHOCOLATE, double LECHEFC) {
