@@ -32,5 +32,56 @@ public class Menu {
     public Menu() {
     }
 
+    //GET
+    public double getCAFESOLO() {
+        return CAFESOLO;
+    }
+
+    public double getCAFESOLOLARGO() {
+        return CAFESOLOLARGO;
+    }
+
+    public double getCAFELECHE() {
+        return CAFELECHE;
+    }
+
+    public double getCORTADO() {
+        return CORTADO;
+    }
+
+    public double getCHOCOLATE() {
+        return CHOCOLATE;
+    }
+
+    public double getLECHEFC() {
+        return LECHEFC;
+    }
+    
+    //SET
+
+    public void setCAFESOLO(double CAFESOLO) {
+        this.CAFESOLO = CAFESOLO;
+    }
+
+    public void setCAFESOLOLARGO(double CAFESOLOLARGO) {
+        this.CAFESOLOLARGO = CAFESOLOLARGO;
+    }
+
+    public void setCAFELECHE(double CAFELECHE) {
+        this.CAFELECHE = CAFELECHE;
+    }
+
+    public void setCORTADO(double CORTADO) {
+        this.CORTADO = CORTADO;
+    }
+
+    public void setCHOCOLATE(double CHOCOLATE) {
+        this.CHOCOLATE = CHOCOLATE;
+    }
+
+    public void setLECHEFC(double LECHEFC) {
+        this.LECHEFC = LECHEFC;
+    }
+
     
 }
