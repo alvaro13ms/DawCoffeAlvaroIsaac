@@ -19,4 +19,18 @@ public class Menu {
     private double CHOCOLATE;
     private double LECHEFC;
 
+    //Creación del constructor de los atributos
+    public Menu(double CAFESOLO, double CAFESOLOLARGO, double CAFELECHE, double CORTADO, double CHOCOLATE, double LECHEFC) {
+        this.CAFESOLO = CAFESOLO;
+        this.CAFESOLOLARGO = CAFESOLOLARGO;
+        this.CAFELECHE = CAFELECHE;
+        this.CORTADO = CORTADO;
+        this.CHOCOLATE = CHOCOLATE;
+        this.LECHEFC = LECHEFC;
+    }
+    //Creación del constructor predeterminado
+    public Menu() {
+    }
+
+    
 }
