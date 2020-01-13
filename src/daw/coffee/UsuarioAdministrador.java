@@ -12,14 +12,14 @@ package daw.coffee;
 public class UsuarioAdministrador {
 
     private final int NOMBREUSUARIO = 0112;
-    private final int CONTRASEÑA = 35813;
+    private final int CONTRASENYA = 35813;
 
     public int getNOMBREUSUARIO() {
         return NOMBREUSUARIO;
     }
 
-    public int getCONTRASEÑA() {
-        return CONTRASEÑA;
+    public int getCONTRASENYA() {
+        return CONTRASENYA;
     }
 
 }
