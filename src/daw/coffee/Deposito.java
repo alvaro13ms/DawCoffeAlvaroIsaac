@@ -10,5 +10,9 @@ package daw.coffee;
  * @author Álvaro
  */
 public class Deposito {
-    
+
+    private double capacidadMaxima;
+    private double capacidadUmbral;
+    private double capacidadActual;
+    private String elemento;
 }
