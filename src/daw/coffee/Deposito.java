@@ -5,6 +5,8 @@
  */
 package daw.coffee;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Álvaro
@@ -78,4 +80,30 @@ public class Deposito {
                 + " Capacidad Umbral : " + this.capacidadUmbral);
     }
 
+    public void rellenarDeposito() {
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("1 para rellenar el depósito entero");
+        System.out.println("2 para indicar la cantidad de producto a reponer");
+        int eleccion = teclado.nextInt();
+
+        if (eleccion == 1) {
+            this.capacidadActual = this.capacidadMaxima;
+        }
+
+        if (eleccion == 2) {
+            System.out.println("Seleccione la cantidad que quiere reponer");
+            int cantidadReponer = teclado.nextInt();
+
+            if (cantidadReponer > this.capacidadMaxima) {
+                this.capacidadActual = capacidadMaxima;
+            } else {
+                this.setCapacidadActual(capacidadActual + cantidadReponer);
+            }
+
+            if (cantidadReponer < 0) {
+                this.capacidadActual = capacidadActual;
+            }
+        }
+    }
 }
