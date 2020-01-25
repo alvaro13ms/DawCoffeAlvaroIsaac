@@ -65,4 +65,9 @@ public class Deposito {
     public void setElemento(String elemento) {
         this.elemento = elemento;
     }
+
+    public void comprobarDeposito() {
+
+        getCapacidadActual();
+    }
 }
