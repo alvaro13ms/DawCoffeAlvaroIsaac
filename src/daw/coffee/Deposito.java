@@ -29,4 +29,12 @@ public class Deposito {
         this.capacidadUmbral = 500;
         this.elemento = "Agua";
     }
+
+    public double getCapacidadMaxima() {
+        return capacidadMaxima;
+    }
+
+    public void setCapacidadMaxima(double capacidadMaxima) {
+        this.capacidadMaxima = capacidadMaxima;
+    }
 }
