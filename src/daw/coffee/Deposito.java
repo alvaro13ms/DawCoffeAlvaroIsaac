@@ -37,4 +37,16 @@ public class Deposito {
     public void setCapacidadMaxima(double capacidadMaxima) {
         this.capacidadMaxima = capacidadMaxima;
     }
+
+    public double getCapacidadUmbral() {
+
+        if (this.capacidadActual < 50) {
+            System.out.println("Este depósito debe ser repuesto cuanto antes");
+        }
+        return capacidadUmbral;
+    }
+
+    public void setCapacidadUmbral(double capacidadUmbral) {
+        this.capacidadUmbral = capacidadUmbral;
+    }
 }
