@@ -70,4 +70,12 @@ public class Deposito {
 
         getCapacidadActual();
     }
+
+    public void comprobarEstadoGeneral() {
+
+        System.out.println("Capacidad actual : " + this.capacidadActual
+                + " Capacidad Máxima : " + this.capacidadMaxima
+                + " Capacidad Umbral : " + this.capacidadUmbral);
+    }
+
 }
