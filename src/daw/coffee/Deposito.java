@@ -49,4 +49,20 @@ public class Deposito {
     public void setCapacidadUmbral(double capacidadUmbral) {
         this.capacidadUmbral = capacidadUmbral;
     }
+
+    public double getCapacidadActual() {
+        return capacidadActual;
+    }
+
+    public void setCapacidadActual(double capacidadActual) {
+        this.capacidadActual = capacidadActual;
+    }
+
+    public String getElemento() {
+        return elemento;
+    }
+
+    public void setElemento(String elemento) {
+        this.elemento = elemento;
+    }
 }
