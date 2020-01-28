@@ -35,6 +35,13 @@ Scanner teclado= new Scanner(System.in);
     
     //Interfaz de la cafetera
     public void interfaz(){
+        //Opcion a elegir para compenzar el programa
+        System.out.println("Que opción deseas hacer?\n"
+                + "1-Venta de los Productos\n"
+                + "2-Administración");
+
+        int opcion = teclado.nextInt();  
+        
     
 }
     //Creación del constructor predeterminado
