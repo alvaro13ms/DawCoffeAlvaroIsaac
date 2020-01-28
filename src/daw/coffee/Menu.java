@@ -23,7 +23,8 @@ public class Menu {
     private double CORTADO = 1;
     private double CHOCOLATE = 1.40;
     private double LECHEFC = 0.50;
-
+    //Atributos adicionales
+    double dinero;
     //Creación del constructor de los atributos
     public Menu(double CAFESOLO, double CAFESOLOLARGO, double CAFELECHE, double CORTADO, double CHOCOLATE, double LECHEFC) {
         this.CAFESOLO = CAFESOLO;
@@ -47,6 +48,15 @@ public class Menu {
         switch (opcion) {
             //Menu de productos
             case 1:
+                do {
+            System.out.println("Introducir dinero:");
+            dinero = teclado.nextDouble();
+            System.out.println("--------------------");
+            if (dinero < this.LECHEFC) {
+                System.out.println("NO as introducido el dinero minimo para comprar algún producto");
+                System.out.println("------------------------");
+            }
+        } while (dinero < this.LECHEFC);
 
                 break;
             //Autentificación del usuario
