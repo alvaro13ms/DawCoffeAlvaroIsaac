@@ -5,12 +5,15 @@
  */
 package daw.coffee;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Isaac
  */
 public class Menu {
-
+    //Scanner para introducir datos por el teclado
+Scanner teclado= new Scanner(System.in);
     //Creación de los atributos de los productos de la cafetera
     //Precio de los productos de la cafetera
     private double CAFESOLO=0.80;
