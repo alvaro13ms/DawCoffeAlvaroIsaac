@@ -24,7 +24,7 @@ public class Menu {
     private double CHOCOLATE = 1.40;
     private double LECHEFC = 0.50;
     //Atributos adicionales
-    double dinero;
+    double dinero,cafe;
     //Creación del constructor de los atributos
     public Menu(double CAFESOLO, double CAFESOLOLARGO, double CAFELECHE, double CORTADO, double CHOCOLATE, double LECHEFC) {
         this.CAFESOLO = CAFESOLO;
@@ -48,6 +48,7 @@ public class Menu {
         switch (opcion) {
             //Menu de productos
             case 1:
+                //Introducir dinero a la maquina, teniendo un minimo posible
                 do {
             System.out.println("Introducir dinero:");
             dinero = teclado.nextDouble();
@@ -57,6 +58,26 @@ public class Menu {
                 System.out.println("------------------------");
             }
         } while (dinero < this.LECHEFC);
+            // Lista de productos que se puede elegir con una limitación para que solo pueda elegir entre esos codigos    
+                     do {
+
+            System.out.println("Productos:\n"
+                    + "101-Cafe Solo 0.80 euros\n"
+                    + "102-Cafe Solo Largo 0.90 euros\n"
+                    + "103-Cafe con Leche 1.10 euros\n"
+                    + "104-Cortado 1 euros\n"
+                    + "105-Chocolate 1.40 euros\n"
+                    + "106-Leche 0.50 euros");
+            cafe = teclado.nextInt();
+            System.out.println("---------------------");
+
+            if (cafe < 101 || cafe > 106) {
+                System.out.println("Codigo incorrecto");
+                System.out.println("-------------");
+                System.out.println("Vuelve a introducir un codigo");
+                System.out.println("--------------");
+            }
+        } while (cafe < 101 || cafe > 106);
 
                 break;
             //Autentificación del usuario
