@@ -29,6 +29,11 @@ public class Menu {
         this.CHOCOLATE = CHOCOLATE;
         this.LECHEFC = LECHEFC;
     }
+    
+    //Interfaz de la cafetera
+    public void interfaz(){
+    
+}
     //Creación del constructor predeterminado
     public Menu() {
     }
