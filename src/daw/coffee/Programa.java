@@ -12,6 +12,10 @@ package daw.coffee;
 public class Programa {
     //Para poder ejecutar el programa
     public static void main(String[] args) {
+        //Relación con la clase Menu
+       Menu menu1=new Menu();
+       //Relación con el interfaz de la cafetera
+        menu1.interfaz();
         
     }
     
