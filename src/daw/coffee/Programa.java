@@ -10,5 +10,9 @@ package daw.coffee;
  * @author Isaac
  */
 public class Programa {
+    //Para poder ejecutar el programa
+    public static void main(String[] args) {
+        
+    }
     
 }
