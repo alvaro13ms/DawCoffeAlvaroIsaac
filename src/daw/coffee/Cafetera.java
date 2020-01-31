@@ -24,4 +24,13 @@ public class Cafetera {
     private UsuarioAdministrador admin;
     private static int numeroVentasHechas = 0;
 
+    private final int cantidadAgua = 80;
+    private final int cantidadcafeSolo = 74;
+    private final int cantidadCafeSoloLargo = 69;
+    private final int cantidadCafeCortado = 65;
+    private final int cantidadcafeDescafeinado = 66;
+    private final int cantidadChocolate = 78;
+    private final int cantidadcafeLeche = 79;
+    private final int cantidadlecheFC = 75;
+
 }
