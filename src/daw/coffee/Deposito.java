@@ -20,6 +20,9 @@ public class Deposito {
 
     public Deposito(double capacidadMaxima, double capacidadUmbral, double capacidadActual, String elemento) {
         this.capacidadMaxima = capacidadMaxima;
+        if (capacidadUmbral < 50) {
+            this.capacidadUmbral = 300;
+        }
         this.capacidadUmbral = capacidadUmbral;
         this.capacidadActual = capacidadActual;
         this.elemento = elemento;
