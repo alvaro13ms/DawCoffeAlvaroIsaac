@@ -57,6 +57,10 @@ public class Deposito {
     }
 
     public void setCapacidadActual(double capacidadActual) {
+
+        if (capacidadActual > this.capacidadMaxima) {
+            this.capacidadActual = capacidadMaxima;
+        }
         this.capacidadActual = capacidadActual;
     }
 
