@@ -33,4 +33,16 @@ public class Cafetera {
     private final int cantidadcafeLeche = 79;
     private final int cantidadlecheFC = 75;
 
+    public Cafetera() {
+        this.agua = new Deposito(800, 50, 500, "agua");
+        this.cafeSolo = new Deposito(900, 50, 490, "Cafe Solo");
+        this.cafeSoloLargo = new Deposito(780, 50, 600, "Cafe Solo Largo");
+        this.cafeCortado = new Deposito(900, 50, 840, "Cafe Cortado");
+        this.cafeDescafeinado = new Deposito(750, 50, 400, "Cafe Descafeinado");
+        this.chocolate = new Deposito(1000, 50, 930, "Chocolate");
+        this.cafeLeche = new Deposito(600, 50, 350, "Cafe Leche");
+        this.lecheFC = new Deposito(950, 50, 800, "Leche FC");
+
+    }
+
 }
