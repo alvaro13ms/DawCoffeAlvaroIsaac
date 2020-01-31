@@ -23,6 +23,22 @@ public class UsuarioAdministrador {
         this.usuario="daw";
         this.contrasenia="daw";
     }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
+    }
     
     
     
