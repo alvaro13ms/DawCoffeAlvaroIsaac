@@ -76,4 +76,15 @@ public class Deposito {
 
         this.capacidadActual = this.capacidadMaxima;
     }
+
+    public void rellenarDepositoCantidad(int cantidad) {
+        if (this.capacidadActual + cantidad >= capacidadMaxima) {
+            this.capacidadActual = capacidadMaxima;
+        }
+        if (cantidad > capacidadMaxima) {
+            this.capacidadActual = capacidadMaxima;
+        }
+
+        this.capacidadActual = this.capacidadActual + cantidad;
+    }
 }
