@@ -97,6 +97,20 @@ public class Menu {
                     System.out.println("Introduzca su contraseña");
                     contraseniaUsuario = teclado.nextLine();
                 } while (!(contraseniaUsuario.equalsIgnoreCase(a.getContrasenia())));
+
+                System.out.println("Has accedido correctamente a la administración de la cafetera");
+                System.out.println("Pulsa cualquier botón");
+                teclado.nextLine();
+                int opcionAdministrar;
+
+                do {
+                    System.out.println("Pulse 1 para comprobar los depósitos");
+                    System.out.println("Pulse 2 para comprobar el estado general");
+                    System.out.println("Pulse 3 para consultar el saldo de ventas");
+                    System.out.println("Pulse 4 para rellenar depósitos");
+
+                    opcionAdministrar = teclado.nextInt();
+                } while (opcionAdministrar < 1 || opcionAdministrar > 4);
                 break;
 
         }
