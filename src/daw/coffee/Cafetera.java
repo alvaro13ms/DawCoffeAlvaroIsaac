@@ -45,4 +45,18 @@ public class Cafetera {
 
     }
 
+    public Cafetera(Deposito agua, Deposito cafeSolo, Deposito cafeSoloLargo, Deposito cafeCortado, Deposito cafeDescafeinado, Deposito chocolate, Deposito cafeLeche, Deposito lecheFC, double dineroConsumidor, double dineroAcumulado, UsuarioAdministrador admin) {
+        this.agua = agua;
+        this.cafeSolo = cafeSolo;
+        this.cafeSoloLargo = cafeSoloLargo;
+        this.cafeCortado = cafeCortado;
+        this.cafeDescafeinado = cafeDescafeinado;
+        this.chocolate = chocolate;
+        this.cafeLeche = cafeLeche;
+        this.lecheFC = lecheFC;
+        this.dineroConsumidor = dineroConsumidor;
+        this.dineroAcumulado = dineroAcumulado;
+        this.admin = admin;
+    }
+
 }
