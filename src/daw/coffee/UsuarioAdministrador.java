@@ -39,6 +39,11 @@ public class UsuarioAdministrador {
     public void setContrasenia(String contrasenia) {
         this.contrasenia = contrasenia;
     }
+
+    @Override
+    public String toString() {
+        return "UsuarioAdministrador{" + "usuario=" + usuario + ", contrasenia=" + contrasenia + '}';
+    }
     
     
     
