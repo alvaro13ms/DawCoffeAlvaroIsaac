@@ -87,4 +87,10 @@ public class Deposito {
 
         this.capacidadActual = this.capacidadActual + cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "Deposito{" + "capacidadMaxima=" + capacidadMaxima + ", capacidadUmbral=" + capacidadUmbral + ", capacidadActual=" + capacidadActual + ", elemento=" + elemento + '}';
+    }
+
 }
