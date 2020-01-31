@@ -19,4 +19,12 @@ public class UsuarioAdministrador {
         this.contrasenia = contrasenia;
     }
 
+    public UsuarioAdministrador() {
+        this.usuario="daw";
+        this.contrasenia="daw";
+    }
+    
+    
+    
+
 }
