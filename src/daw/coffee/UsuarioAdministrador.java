@@ -11,8 +11,8 @@ package daw.coffee;
  */
 public class UsuarioAdministrador {
 
-    private final int NOMBREUSUARIO = 0112;
-    private final int CONTRASENYA = 35813;
+    private String usuario;
+    private String contraseña;
 
     public int getNOMBREUSUARIO() {
         return NOMBREUSUARIO;
