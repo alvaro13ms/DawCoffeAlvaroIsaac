@@ -12,14 +12,11 @@ package daw.coffee;
 public class UsuarioAdministrador {
 
     private String usuario;
-    private String contraseña;
+    private String contrasenia;
 
-    public int getNOMBREUSUARIO() {
-        return NOMBREUSUARIO;
-    }
-
-    public int getCONTRASENYA() {
-        return CONTRASENYA;
+    public UsuarioAdministrador(String usuario, String contrasenia) {
+        this.usuario = usuario;
+        this.contrasenia = contrasenia;
     }
 
 }
