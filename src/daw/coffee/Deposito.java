@@ -72,18 +72,6 @@ public class Deposito {
         this.elemento = elemento;
     }
 
-    public void comprobarDeposito() {
-
-        getCapacidadActual();
-    }
-
-    public void comprobarEstadoGeneral() {
-
-        System.out.println("Capacidad actual : " + this.capacidadActual
-                + " Capacidad Máxima : " + this.capacidadMaxima
-                + " Capacidad Umbral : " + this.capacidadUmbral);
-    }
-
     public void rellenarDeposito() {
 
         Scanner teclado = new Scanner(System.in);
