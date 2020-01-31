@@ -19,6 +19,7 @@ public class Cafetera {
     private Deposito chocolate;
     private Deposito cafeLeche;
     private Deposito lecheFC;
+    private Deposito azucar;
     private double dineroConsumidor;
     private double dineroAcumulado;
     private UsuarioAdministrador admin;
@@ -32,6 +33,7 @@ public class Cafetera {
     private final int cantidadChocolate = 78;
     private final int cantidadcafeLeche = 79;
     private final int cantidadlecheFC = 75;
+    private final int cantidadAzucar = 72;
 
     public Cafetera() {
         this.agua = new Deposito(800, 50, 500, "agua");
@@ -42,10 +44,11 @@ public class Cafetera {
         this.chocolate = new Deposito(1000, 50, 930, "Chocolate");
         this.cafeLeche = new Deposito(600, 50, 350, "Cafe Leche");
         this.lecheFC = new Deposito(950, 50, 800, "Leche FC");
+        this.azucar = new Deposito(675, 50, 515, "Azucar");
 
     }
 
-    public Cafetera(Deposito agua, Deposito cafeSolo, Deposito cafeSoloLargo, Deposito cafeCortado, Deposito cafeDescafeinado, Deposito chocolate, Deposito cafeLeche, Deposito lecheFC, double dineroConsumidor, double dineroAcumulado, UsuarioAdministrador admin) {
+    public Cafetera(Deposito agua, Deposito cafeSolo, Deposito cafeSoloLargo, Deposito cafeCortado, Deposito cafeDescafeinado, Deposito chocolate, Deposito cafeLeche, Deposito lecheFC, Deposito azucar, double dineroConsumidor, double dineroAcumulado, UsuarioAdministrador admin) {
         this.agua = agua;
         this.cafeSolo = cafeSolo;
         this.cafeSoloLargo = cafeSoloLargo;
@@ -54,6 +57,7 @@ public class Cafetera {
         this.chocolate = chocolate;
         this.cafeLeche = cafeLeche;
         this.lecheFC = lecheFC;
+        this.azucar = azucar;
         this.dineroConsumidor = dineroConsumidor;
         this.dineroAcumulado = dineroAcumulado;
         this.admin = admin;
