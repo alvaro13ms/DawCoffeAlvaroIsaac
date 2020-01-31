@@ -45,9 +45,6 @@ public class Deposito {
 
     public double getCapacidadUmbral() {
 
-        if (this.capacidadActual < 50) {
-            System.out.println("Este depósito debe ser repuesto cuanto antes");
-        }
         return capacidadUmbral;
     }
 
