@@ -24,8 +24,9 @@ public class Menu {
     private final double CHOCOLATE;
     private final double LECHEFC;
     //Atributos adicionales
-    double dinero;
-    int cafe;
+    double dinero, dinero2, resultado;
+    int cafe, opcionS, opcionD,azucar;
+    boolean salir = false;
 
     //Creación del constructor de los atributos
     public Menu(double CAFESOLO, double CAFESOLOLARGO, double CAFELECHE, double CORTADO, double CHOCOLATE, double LECHEFC) {
@@ -85,6 +86,65 @@ public class Menu {
                 switch (cafe) {
 
                     case 101:
+                        //Introducir el dinero necesario para comprar el cafe solo ó volver al menu
+                        if (dinero < this.CAFESOLO) {
+                            do {
+                                System.out.println("No as introducido suficiente dinero\n"
+                                        + "1-Agregar dinero\n"
+                                        + "2-Volver al menu");
+                                System.out.println("---------------------");
+                                opcionS = teclado.nextInt();
+                                System.out.println("---------------------");
+                        //Agregar dinero para pagar el producto
+                                switch (opcionS) {
+
+                                    case 1:
+                                        System.out.println("Agregar dinero:");
+                                        dinero2 = teclado.nextDouble();
+                                        dinero = dinero + dinero2;
+                                        System.out.println("---------------------");
+                                        System.out.printf("Saldo de cliente actual: %.2f euros ", dinero);
+
+                                        System.out.println("");
+
+                                        break;
+                        //Volver al menu
+                                    case 2:
+                                        salir = false;
+                                        break;
+
+                                }
+
+                            } while (dinero < this.CAFESOLO);
+
+                        }
+                        //Opción de quererlo descafinado o no
+                        System.out.println("");
+                        System.out.println("------------------------------");
+
+                        System.out.println("Lo deseas descafeinado?\n"
+                                + "1-Si\n"
+                                + "2-No");
+                        System.out.println("--------------------");
+                        opcionD = teclado.nextInt();
+                        System.out.println("--------------------");
+                        resultado = dinero - this.CAFESOLO;
+                        //Opción para saber si quiere azucar
+                        System.out.println("-------------------");
+                        System.out.println("Desea azucar?\n"
+                                + "1-Si\n"
+                                + "2-No");
+                        azucar=teclado.nextInt();
+                        switch (opcionD) {
+                        //resultado
+                            case 1:
+                                System.out.printf("El cafe solo (Descafeinado) cuesta 0.80 euros por lo que el cambio será de: %.2f euros", resultado);
+                                break;
+
+                            case 2:
+                                System.out.printf("El cafe solo cuesta 0.80 euros por lo que el cambio será de: %.2f euros", resultado);
+                                break;
+                        }
 
                         break;
 
