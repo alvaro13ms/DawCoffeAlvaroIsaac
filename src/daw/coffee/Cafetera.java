@@ -62,5 +62,11 @@ public class Cafetera {
         this.dineroAcumulado = dineroAcumulado;
         this.admin = admin;
     }
-
+//Cantidad que queda del cafe Solo con cada venta
+    public void ServirCafeSolo() {
+        cafeSolo.setCapacidadActual(cafeSolo.getCapacidadActual() - cantidadcafeSolo);
+        agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
+        numeroVentasHechas = numeroVentasHechas + 1;
+ 
+    }
 }

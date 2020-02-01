@@ -93,4 +93,6 @@ public class Deposito {
         return "Deposito{" + "capacidadMaxima=" + capacidadMaxima + ", capacidadUmbral=" + capacidadUmbral + ", capacidadActual=" + capacidadActual + ", elemento=" + elemento + '}';
     }
 
+  
+
 }
