@@ -149,6 +149,8 @@ public class Menu {
                                     System.out.printf("El cafe solo cuesta 0.80 euros por lo que el cambio será de: %.2f euros", resultado);
                                     break;
                             }
+                            
+                            relacionC.ServirCafeSolo();
 
                             break;
 
