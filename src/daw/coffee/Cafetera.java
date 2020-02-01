@@ -94,4 +94,12 @@ public class Cafetera {
         numeroVentasHechas = numeroVentasHechas + 1;
 
     }
+    
+      //Cantidad que queda del chocolate con cada Venta    
+    public void ServirChocolate() {
+        chocolate.setCapacidadActual(chocolate.getCapacidadActual() - cantidadChocolate);
+        agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
+        numeroVentasHechas = numeroVentasHechas + 1;
+
+    }
 }
