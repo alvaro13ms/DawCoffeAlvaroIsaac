@@ -16,7 +16,8 @@ public class Programa {
        Menu menu1=new Menu();
        //Relación con el interfaz de la cafetera
         menu1.interfaz();
-        
+         Cafetera cafetera=new Cafetera();
+   
     }
     
 }

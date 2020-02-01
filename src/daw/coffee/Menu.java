@@ -12,8 +12,8 @@ import java.util.Scanner;
  * @author Isaac
  */
 public class Menu {
-    //Scanner para introducir datos por el teclado
 
+    //Scanner para introducir datos por el teclado
     Scanner teclado = new Scanner(System.in);
     //Creación de los atributos de los productos de la cafetera
     //Precio de los productos de la cafetera
@@ -24,7 +24,8 @@ public class Menu {
     private final double CHOCOLATE;
     private final double LECHEFC;
     //Atributos adicionales
-    double dinero, cafe;
+    double dinero;
+    int cafe;
 
     //Creación del constructor de los atributos
     public Menu(double CAFESOLO, double CAFESOLOLARGO, double CAFELECHE, double CORTADO, double CHOCOLATE, double LECHEFC) {
@@ -47,6 +48,7 @@ public class Menu {
 
         //Switch para hacer una de las dos opociones elegidas
         switch (opcion) {
+
             //Menu de productos
             case 1:
                 //Introducir dinero a la maquina, teniendo un minimo posible
@@ -79,6 +81,33 @@ public class Menu {
                         System.out.println("--------------");
                     }
                 } while (cafe < 101 || cafe > 106);
+
+                switch (cafe) {
+
+                    case 101:
+
+                        break;
+
+                    case 102:
+
+                        break;
+
+                    case 103:
+
+                        break;
+
+                    case 104:
+
+                        break;
+
+                    case 105:
+
+                        break;
+
+                    case 106:
+
+                        break;
+                }
 
                 break;
             //Autentificación del usuario
