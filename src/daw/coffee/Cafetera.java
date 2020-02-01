@@ -63,25 +63,35 @@ public class Cafetera {
         this.admin = admin;
     }
 //Cantidad que queda del cafe Solo con cada venta
+
     public void ServirCafeSolo() {
         cafeSolo.setCapacidadActual(cafeSolo.getCapacidadActual() - cantidadcafeSolo);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
         numeroVentasHechas = numeroVentasHechas + 1;
- 
+
     }
- //Cantidad que queda del Cafe Largo con cada venta   
-      public void ServirCafeLargo() {
+    //Cantidad que queda del Cafe Largo con cada venta   
+
+    public void ServirCafeLargo() {
         cafeSoloLargo.setCapacidadActual(cafeSoloLargo.getCapacidadActual() - cantidadCafeSoloLargo);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
         numeroVentasHechas = numeroVentasHechas + 1;
- 
+
     }
-      
-  //Cantidad que queda del cafe Cortado con cada Venta    
-         public void ServirCortado() {
+
+    //Cantidad que queda del cafe Cortado con cada Venta    
+    public void ServirCafeCortado() {
         cafeCortado.setCapacidadActual(cafeCortado.getCapacidadActual() - cantidadCafeCortado);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
         numeroVentasHechas = numeroVentasHechas + 1;
- 
+
+    }
+
+    //Cantidad que queda del cafe Descafeinado con cada Venta    
+    public void ServirCafeDescafeinado() {
+        cafeDescafeinado.setCapacidadActual(cafeDescafeinado.getCapacidadActual() - cantidadcafeDescafeinado);
+        agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
+        numeroVentasHechas = numeroVentasHechas + 1;
+
     }
 }
