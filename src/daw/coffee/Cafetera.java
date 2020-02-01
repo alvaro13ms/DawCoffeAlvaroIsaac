@@ -76,4 +76,12 @@ public class Cafetera {
         numeroVentasHechas = numeroVentasHechas + 1;
  
     }
+      
+  //Cantidad que queda del cafe Cortado con cada Venta    
+         public void ServirCortado() {
+        cafeCortado.setCapacidadActual(cafeCortado.getCapacidadActual() - cantidadCafeCortado);
+        agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
+        numeroVentasHechas = numeroVentasHechas + 1;
+ 
+    }
 }
