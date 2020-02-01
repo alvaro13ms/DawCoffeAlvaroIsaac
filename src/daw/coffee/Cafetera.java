@@ -112,10 +112,16 @@ public class Cafetera {
     }
     
       //Cantidad que queda del leche con cada Venta    
-    public void LecheFC() {
+    public void ServirLecheFC() {
         lecheFC.setCapacidadActual(lecheFC.getCapacidadActual() - cantidadlecheFC);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
         numeroVentasHechas = numeroVentasHechas + 1;
 
+    }
+    
+        //Cantidad que queda de Azucar con cada Venta    
+    public void ServirAzucar() {
+        azucar.setCapacidadActual(azucar.getCapacidadActual() - cantidadAzucar);
+       
     }
 }
