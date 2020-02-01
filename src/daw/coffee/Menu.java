@@ -12,7 +12,8 @@ import java.util.Scanner;
  * @author Isaac
  */
 public class Menu {
-
+    //Relación de la clase Menu con la clase Cafetera
+    Cafetera relacionC = new Cafetera();
     //Scanner para introducir datos por el teclado
     Scanner teclado = new Scanner(System.in);
     //Creación de los atributos de los productos de la cafetera
@@ -40,8 +41,8 @@ public class Menu {
 
     //Interfaz de la cafetera
     public void interfaz() {
-        //Opcion a elegir para compenzar el programa
 
+        //Opcion a elegir para compenzar el programa
         System.out.println("Que opción deseas hacer?\n"
                 + "1-Venta de los Productos\n"
                 + "2-Administración");
