@@ -72,9 +72,10 @@ public class Deposito {
         this.elemento = elemento;
     }
 
-    public void rellenarDepositoEntero() {
+    public String rellenarDepositoEntero(String elemento) {
 
         this.capacidadActual = this.capacidadMaxima;
+        return "El depósito de " + elemento + " ha sido rellenado entero";
     }
 
     public void rellenarDepositoCantidad(int cantidad) {
@@ -92,7 +93,5 @@ public class Deposito {
     public String toString() {
         return "Deposito{" + "capacidadMaxima=" + capacidadMaxima + ", capacidadUmbral=" + capacidadUmbral + ", capacidadActual=" + capacidadActual + ", elemento=" + elemento + '}';
     }
-
-  
 
 }
