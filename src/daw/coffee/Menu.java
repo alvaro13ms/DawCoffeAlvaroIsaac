@@ -166,6 +166,77 @@ public class Menu {
                         break;
 
                     case 102:
+                        //Introducir el dinero necesario para comprar el cafe solo ó volver al menu
+                        if (dinero < this.CAFESOLOLARGO) {
+                            do {
+                                System.out.println("No as introducido suficiente dinero\n"
+                                        + "1-Agregar dinero\n"
+                                        + "2-Volver al menu");
+                                System.out.println("---------------------");
+                                opcionS = teclado.nextInt();
+                                System.out.println("---------------------");
+                                //Agregar dinero para pagar el producto
+                                switch (opcionS) {
+
+                                    case 1:
+                                        System.out.println("Agregar dinero:");
+                                        dinero2 = teclado.nextDouble();
+                                        dinero = dinero + dinero2;
+                                        System.out.println("---------------------");
+                                        System.out.printf("Saldo de cliente actual: %.2f euros ", dinero);
+
+                                        System.out.println("");
+
+                                        break;
+                                    //Volver al menu
+                                    case 2:
+                                        salir = false;
+                                        break;
+
+                                }
+
+                            } while (dinero < this.CAFESOLOLARGO);
+                        }
+
+                        //Opción de quererlo descafinado o no
+                        System.out.println("");
+                        System.out.println("------------------------------");
+
+                        System.out.println("Lo deseas descafeinado?\n"
+                                + "1-Si\n"
+                                + "2-No");
+                        System.out.println("--------------------");
+                        opcionD = teclado.nextInt();
+                        System.out.println("--------------------");
+                        resultado = dinero - this.CAFESOLOLARGO;
+                        //Opción para saber si quiere azucar
+                        System.out.println("-------------------");
+                        System.out.println("Desea azucar?\n"
+                                + "1-Si\n"
+                                + "2-No");
+                        System.out.println("------------------");
+                        azucar = teclado.nextInt();
+                        System.out.println("---------------------");
+                        //Gasto del azucar de los depositos
+                        if (azucar == 1) {
+                            relacionC.ServirAzucar();
+                        }
+                        switch (opcionD) {
+                            //resultado
+                            case 1:
+                                System.out.printf("El cafe solo Largo (Descafeinado) cuesta 0.90 euros por lo que el cambio será de: %.2f euros", resultado);
+                                //Gasto del producto en los depositos
+                                relacionC.ServirCafeLargo();
+                                relacionC.ServirCafeDescafeinado();
+                                break;
+
+                            case 2:
+                                System.out.printf("El cafe solo Largo cuesta 0.90 euros por lo que el cambio será de: %.2f euros", resultado);
+                                //Gasto del producto en los depositos
+                                relacionC.ServirCafeLargo();
+                                break;
+
+                        }
 
                         break;
 
