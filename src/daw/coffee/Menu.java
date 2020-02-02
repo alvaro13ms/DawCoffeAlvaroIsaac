@@ -322,6 +322,77 @@ public class Menu {
 
                         }
                     }
+
+                    if (elegirRellenar == 2) {
+                        Deposito rellenarCantidad = new Deposito();
+                        int elegirCantidadDeposito;
+                        do {
+                            System.out.println("1 para rellenar una cantidad del depósito de agua");
+                            System.out.println("2 para rellenar una cantidad del depósito de Cafe Solo");
+                            System.out.println("3 para rellenar una cantidad del depósito de Cafe Solo Largo");
+                            System.out.println("4 para rellenar una cantidad del depósito de Cafe Cortado");
+                            System.out.println("5 para rellenar una cantidad del depósito de Cafe Descafeinado");
+                            System.out.println("6 para rellenar una cantidad del depósito de Chocolate");
+                            System.out.println("7 para rellenar una cantidad del depósito de Cafe Leche");
+                            System.out.println("8 para rellenar una cantidad del depósito de Leche FC");
+                            System.out.println("9 para rellenar una cantidad del depósito de Azucar");
+                            elegirCantidadDeposito = teclado.nextInt();
+                        } while (elegirCantidadDeposito < 1 || elegirCantidadDeposito > 9);
+
+                        if (elegirCantidadDeposito == 1) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de agua");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "agua");
+                        }
+
+                        if (elegirCantidadDeposito == 2) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de Cafe Solo");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "cafe solo");
+                        }
+
+                        if (elegirCantidadDeposito == 3) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de Cafe Solo Largo");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "cafe solo largo");
+                        }
+
+                        if (elegirCantidadDeposito == 4) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de Cafe Cortado");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "cafe cortado");
+                        }
+
+                        if (elegirCantidadDeposito == 5) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de Cafe Descafeinado");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "cafe descafeinado");
+                        }
+
+                        if (elegirCantidadDeposito == 6) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de Chocolate");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "chocolate");
+                        }
+
+                        if (elegirCantidadDeposito == 7) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de Cafe Leche");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "cafe leche");
+                        }
+
+                        if (elegirCantidadDeposito == 8) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de Leche FC");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "leche fc");
+                        }
+
+                        if (elegirCantidadDeposito == 9) {
+                            System.out.println("Escribe la cantidad a rellenar en el depósito de azucar");
+                            int cantidad = teclado.nextInt();
+                            rellenarCantidad.rellenarDepositoCantidad(cantidad, "azucar");
+                        }
+                    }
                 }
                 break;
 
