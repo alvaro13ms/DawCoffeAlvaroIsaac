@@ -237,4 +237,14 @@ public class Cafetera {
         }
 
     }
+
+    public String comprobarEstadoGeneral() {
+
+        String mensajeGeneral;
+        mensajeGeneral = agua.toString() + cafeSolo.toString() + cafeSoloLargo.toString() + cafeCortado.toString()
+                + cafeDescafeinado.toString() + chocolate.toString() + cafeLeche.toString()
+                + lecheFC.toString() + azucar.toString() + admin.toString();
+
+        return mensajeGeneral;
+    }
 }
