@@ -247,4 +247,10 @@ public class Cafetera {
 
         return mensajeGeneral;
     }
+
+    @Override
+    public String toString() {
+        return "Cafetera{" + "agua=" + agua + ", cafeSolo=" + cafeSolo + ", cafeSoloLargo=" + cafeSoloLargo + ", cafeCortado=" + cafeCortado + ", cafeDescafeinado=" + cafeDescafeinado + ", chocolate=" + chocolate + ", cafeLeche=" + cafeLeche + ", lecheFC=" + lecheFC + ", azucar=" + azucar + ", dineroConsumidor=" + dineroConsumidor + ", dineroAcumulado=" + dineroAcumulado + ", admin=" + admin + ", cantidadAgua=" + cantidadAgua + ", cantidadcafeSolo=" + cantidadcafeSolo + ", cantidadCafeSoloLargo=" + cantidadCafeSoloLargo + ", cantidadCafeCortado=" + cantidadCafeCortado + ", cantidadcafeDescafeinado=" + cantidadcafeDescafeinado + ", cantidadChocolate=" + cantidadChocolate + ", cantidadcafeLeche=" + cantidadcafeLeche + ", cantidadlecheFC=" + cantidadlecheFC + ", cantidadAzucar=" + cantidadAzucar + '}';
+    }
+
 }
