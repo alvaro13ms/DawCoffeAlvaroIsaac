@@ -43,13 +43,15 @@ public class Menu {
     //Interfaz de la cafetera
     public void interfaz() {
 
-        //Opcion a elegir para compenzar el programa
-        System.out.println("Que opción deseas hacer?\n"
-                + "1-Venta de los Productos\n"
-                + "2-Administración");
+        //Opcion a elegir para comenzar el programa
+        int opcion;
+        do {
+            System.out.println("Que opción deseas hacer?\n"
+                    + "1-Venta de los Productos\n"
+                    + "2-Administración");
 
-        int opcion = teclado.nextInt();
-
+            opcion = teclado.nextInt();
+        } while (opcion < 1 || opcion > 2);
         //Switch para hacer una de las dos opociones elegidas
         switch (opcion) {
 
