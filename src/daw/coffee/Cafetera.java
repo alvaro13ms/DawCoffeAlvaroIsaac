@@ -227,4 +227,14 @@ public class Cafetera {
         azucar.setCapacidadActual(azucar.getCapacidadActual() - cantidadAzucar);
 
     }
+
+    public void comprobarDepositos(Deposito comprueba) {
+
+        if (comprueba.getCapacidadActual() <= comprueba.getCapacidadUmbral()) {
+            System.out.println("Tiene que ser rellenado " + comprueba.getElemento());
+        } else {
+            System.out.println("No hay que rellenar ningún deposito");
+        }
+
+    }
 }
