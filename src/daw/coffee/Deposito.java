@@ -78,14 +78,20 @@ public class Deposito {
         return "El depósito de " + elemento + " ha sido rellenado entero";
     }
 
-    public void rellenarDepositoCantidad(int cantidad) {
+    public void rellenarDepositoCantidad(int cantidad, String elemento) {
         if (this.capacidadActual + cantidad >= capacidadMaxima) {
+            System.out.println("Se ha rellenado el depósito de " + elemento
+                    + "con " + cantidad);
             this.capacidadActual = capacidadMaxima;
+
         }
         if (cantidad > capacidadMaxima) {
+            System.out.println("Se ha rellenado el depósito de " + elemento
+                    + "con " + cantidad);
             this.capacidadActual = capacidadMaxima;
         }
-
+        System.out.println("Se ha rellenado el depósito de " + elemento
+                + "con " + cantidad);
         this.capacidadActual = this.capacidadActual + cantidad;
     }
 
