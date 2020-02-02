@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Isaac
  */
 public class Menu {
+
     //Relación de la clase Menu con la clase Cafetera
     Cafetera relacionC = new Cafetera();
     //Scanner para introducir datos por el teclado
@@ -149,7 +150,7 @@ public class Menu {
                                     System.out.printf("El cafe solo cuesta 0.80 euros por lo que el cambio será de: %.2f euros", resultado);
                                     break;
                             }
-                            
+
                             relacionC.ServirCafeSolo();
 
                             break;
@@ -211,6 +212,28 @@ public class Menu {
                     opcionAdministrar = teclado.nextInt();
                 } while (opcionAdministrar < 1 || opcionAdministrar > 4);
 
+                if (opcionAdministrar == 1) {
+                    Cafetera c = new Cafetera();
+                    Deposito prueba = new Deposito();
+                    c.comprobarDepositos(prueba);
+                }
+
+                if (opcionAdministrar == 2) {
+                    Cafetera d = new Cafetera();
+                    d.comprobarEstadoGeneral();
+                }
+
+                if (opcionAdministrar == 3) {
+                    Cafetera e = new Cafetera();
+                    e.getDineroAcumulado();
+                }
+                if (opcionAdministrar == 4) {
+                    Deposito f = new Deposito();
+                    System.out.println("1 para rellenar un depósito entero");
+
+                    int elegirRellenar = teclado.nextInt();
+
+                }
                 break;
 
         }
