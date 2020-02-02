@@ -62,8 +62,112 @@ public class Cafetera {
         this.dineroAcumulado = dineroAcumulado;
         this.admin = admin;
     }
-//Cantidad que queda del cafe Solo con cada venta
 
+    public Deposito getAgua() {
+        return agua;
+    }
+
+    public void setAgua(Deposito agua) {
+        this.agua = agua;
+    }
+
+    public Deposito getCafeSolo() {
+        return cafeSolo;
+    }
+
+    public void setCafeSolo(Deposito cafeSolo) {
+        this.cafeSolo = cafeSolo;
+    }
+
+    public Deposito getCafeSoloLargo() {
+        return cafeSoloLargo;
+    }
+
+    public void setCafeSoloLargo(Deposito cafeSoloLargo) {
+        this.cafeSoloLargo = cafeSoloLargo;
+    }
+
+    public Deposito getCafeCortado() {
+        return cafeCortado;
+    }
+
+    public void setCafeCortado(Deposito cafeCortado) {
+        this.cafeCortado = cafeCortado;
+    }
+
+    public Deposito getCafeDescafeinado() {
+        return cafeDescafeinado;
+    }
+
+    public void setCafeDescafeinado(Deposito cafeDescafeinado) {
+        this.cafeDescafeinado = cafeDescafeinado;
+    }
+
+    public Deposito getChocolate() {
+        return chocolate;
+    }
+
+    public void setChocolate(Deposito chocolate) {
+        this.chocolate = chocolate;
+    }
+
+    public Deposito getCafeLeche() {
+        return cafeLeche;
+    }
+
+    public void setCafeLeche(Deposito cafeLeche) {
+        this.cafeLeche = cafeLeche;
+    }
+
+    public Deposito getLecheFC() {
+        return lecheFC;
+    }
+
+    public void setLecheFC(Deposito lecheFC) {
+        this.lecheFC = lecheFC;
+    }
+
+    public Deposito getAzucar() {
+        return azucar;
+    }
+
+    public void setAzucar(Deposito azucar) {
+        this.azucar = azucar;
+    }
+
+    public double getDineroConsumidor() {
+        return dineroConsumidor;
+    }
+
+    public void setDineroConsumidor(double dineroConsumidor) {
+        this.dineroConsumidor = dineroConsumidor;
+    }
+
+    public double getDineroAcumulado() {
+        return dineroAcumulado;
+    }
+
+    public void setDineroAcumulado(double dineroAcumulado) {
+        this.dineroAcumulado = dineroAcumulado;
+    }
+
+    public UsuarioAdministrador getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(UsuarioAdministrador admin) {
+        this.admin = admin;
+    }
+
+    public static int getNumeroVentasHechas() {
+        return numeroVentasHechas;
+    }
+
+    public static void setNumeroVentasHechas(int numeroVentasHechas) {
+        Cafetera.numeroVentasHechas = numeroVentasHechas;
+    }
+
+//Cantidad que queda del cafe Solo con cada venta
     public void ServirCafeSolo() {
         cafeSolo.setCapacidadActual(cafeSolo.getCapacidadActual() - cantidadcafeSolo);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
