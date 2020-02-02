@@ -27,7 +27,7 @@ public class Menu {
     private final double LECHEFC;
     //Atributos adicionales
     double dinero, dinero2, resultado;
-    int cafe, opcionS, opcionD, azucar;
+    int cafe, opcionS, opcionD, azucar,temperatura;
     boolean salir = false;
 
     //Creación del constructor de los atributos
@@ -445,7 +445,42 @@ public class Menu {
 
                     case 106:
 
-                        break;
+                        
+                        resultado = dinero - this.LECHEFC;
+                         System.out.println("Lo desea Caliente o Frio?\n"
+                                + "1-Caliente\n"
+                                + "2-Frio");
+                        System.out.println("------------------");
+                        temperatura = teclado.nextInt();
+                        //Opción para saber si quiere azucar
+                        System.out.println("-------------------");
+                        System.out.println("Desea azucar?\n"
+                                + "1-Si\n"
+                                + "2-No");
+                        System.out.println("------------------");
+                        azucar = teclado.nextInt();
+                        System.out.println("---------------------");
+                        //Gasto del azucar de los depositos
+                        if (azucar == 1) {
+                            relacionC.ServirAzucar();
+                        }
+
+                        switch (temperatura) {
+                            //resultado
+                            case 1:
+                                System.out.printf("La leche (Caliente) cuesta 0,5 euros por lo que el cambio será de: %.2f euros", resultado);
+                                //Gasto del producto en los depositos
+                                relacionC.ServirLecheFC();
+                                
+                                break;
+
+                            case 2:
+                                System.out.printf("La Leche (Fria)cuesta 0,5 euros por lo que el cambio será de: %.2f euros", resultado);
+                                //Gasto del producto en los depositos
+                                relacionC.ServirLecheFC();
+                                break;
+
+                        }
                 }
 
                 break;
