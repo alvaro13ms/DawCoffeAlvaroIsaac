@@ -142,18 +142,26 @@ public class Menu {
                         System.out.println("------------------");
                         azucar = teclado.nextInt();
                         System.out.println("---------------------");
+                        //Gasto del azucar de los depositos
+                        if (azucar == 1) {
+                            relacionC.ServirAzucar();
+                        }
                         switch (opcionD) {
                             //resultado
                             case 1:
                                 System.out.printf("El cafe solo (Descafeinado) cuesta 0.80 euros por lo que el cambio será de: %.2f euros", resultado);
+                                //Gasto del producto en los depositos
+                                relacionC.ServirCafeSolo();
+                                relacionC.ServirCafeDescafeinado();
                                 break;
 
                             case 2:
                                 System.out.printf("El cafe solo cuesta 0.80 euros por lo que el cambio será de: %.2f euros", resultado);
+                                //Gasto del producto en los depositos
+                                relacionC.ServirCafeSolo();
                                 break;
-                        }
 
-                        relacionC.ServirCafeSolo();
+                        }
 
                         break;
 
