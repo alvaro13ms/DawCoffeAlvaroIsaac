@@ -229,10 +229,99 @@ public class Menu {
                 }
                 if (opcionAdministrar == 4) {
                     Deposito f = new Deposito();
-                    System.out.println("1 para rellenar un depósito entero");
+                    int elegirRellenar;
+                    do {
+                        System.out.println("1 para rellenar un depósito entero");
+                        System.out.println("2 para indicar una cantidad");
+                        elegirRellenar = teclado.nextInt();
+                    } while (elegirRellenar < 1 || elegirRellenar > 2);
 
-                    int elegirRellenar = teclado.nextInt();
+                    if (elegirRellenar == 1) {
+                        Deposito i = new Deposito();
+                        int depositoConcreto;
+                        do {
+                            System.out.println("1 para rellenar el depósito de agua");
+                            System.out.println("2 para rellenar el depósito de Cafe Solo");
+                            System.out.println("3 para rellenar el depósito de Cafe Solo Largo");
+                            System.out.println("4 para rellenar el depósito de Cafe Cortado");
+                            System.out.println("5 para rellenar el depósito de Cafe Descafeinado");
+                            System.out.println("6 para rellenar el depósito de Chocolate");
+                            System.out.println("7 para rellenar el depósito de Cafe Leche");
+                            System.out.println("8 para rellenar el depósito de Leche FC");
+                            System.out.println("9 para rellenar el depósito de Azucar");
+                            depositoConcreto = teclado.nextInt();
+                        } while (depositoConcreto < 1 || depositoConcreto > 9);
 
+                        if (depositoConcreto == 1) {
+                            Deposito agua = new Deposito();
+                            i.rellenarDepositoEntero("agua");
+                            agua.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 2) {
+                            Deposito cafeSolo = new Deposito();
+                            i.rellenarDepositoEntero("Cafe Solo");
+                            cafeSolo.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 2) {
+                            Deposito cafeSolo = new Deposito();
+                            i.rellenarDepositoEntero("Cafe Solo");
+                            cafeSolo.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 3) {
+                            Deposito cafeSoloLargo = new Deposito();
+                            i.rellenarDepositoEntero("Cafe Solo Largo");
+                            cafeSoloLargo.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 4) {
+                            Deposito cafeCortado = new Deposito();
+                            i.rellenarDepositoEntero("Cafe Cortado");
+                            cafeCortado.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 5) {
+                            Deposito cafeDescafeinado = new Deposito();
+                            i.rellenarDepositoEntero("Cafe Descafeinado");
+                            cafeDescafeinado.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 6) {
+                            Deposito chocolate = new Deposito();
+                            i.rellenarDepositoEntero("Chocolate");
+                            chocolate.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 7) {
+                            Deposito cafeLeche = new Deposito();
+                            i.rellenarDepositoEntero("Cafe Leche");
+                            cafeLeche.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 8) {
+                            Deposito lecheFC = new Deposito();
+                            i.rellenarDepositoEntero("Leche FC");
+                            lecheFC.getCapacidadMaxima();
+
+                        }
+
+                        if (depositoConcreto == 9) {
+                            Deposito azucar = new Deposito();
+                            i.rellenarDepositoEntero("Azucar");
+                            azucar.getCapacidadMaxima();
+
+                        }
+                    }
                 }
                 break;
 
