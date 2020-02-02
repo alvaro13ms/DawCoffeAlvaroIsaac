@@ -67,7 +67,7 @@ public class Cafetera {
     public void ServirCafeSolo() {
         cafeSolo.setCapacidadActual(cafeSolo.getCapacidadActual() - cantidadcafeSolo);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
-        numeroVentasHechas = numeroVentasHechas + 1;
+        numeroVentasHechas++;
 
     }
     //Cantidad que queda del Cafe Largo con cada venta   
@@ -75,7 +75,7 @@ public class Cafetera {
     public void ServirCafeLargo() {
         cafeSoloLargo.setCapacidadActual(cafeSoloLargo.getCapacidadActual() - cantidadCafeSoloLargo);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
-        numeroVentasHechas = numeroVentasHechas + 1;
+        numeroVentasHechas++;
 
     }
 
@@ -83,7 +83,7 @@ public class Cafetera {
     public void ServirCafeCortado() {
         cafeCortado.setCapacidadActual(cafeCortado.getCapacidadActual() - cantidadCafeCortado);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
-        numeroVentasHechas = numeroVentasHechas + 1;
+        numeroVentasHechas++;
 
     }
 
@@ -91,37 +91,36 @@ public class Cafetera {
     public void ServirCafeDescafeinado() {
         cafeDescafeinado.setCapacidadActual(cafeDescafeinado.getCapacidadActual() - cantidadcafeDescafeinado);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
-        numeroVentasHechas = numeroVentasHechas + 1;
+        numeroVentasHechas++;
 
     }
-    
-      //Cantidad que queda del chocolate con cada Venta    
+
+    //Cantidad que queda del chocolate con cada Venta    
     public void ServirChocolate() {
         chocolate.setCapacidadActual(chocolate.getCapacidadActual() - cantidadChocolate);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
-        numeroVentasHechas = numeroVentasHechas + 1;
+        numeroVentasHechas++;
 
     }
-    
-      //Cantidad que queda del cafe con leche con cada Venta    
+
+    //Cantidad que queda del cafe con leche con cada Venta    
     public void ServirCafeLeche() {
         cafeLeche.setCapacidadActual(cafeLeche.getCapacidadActual() - cantidadcafeLeche);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
-        numeroVentasHechas = numeroVentasHechas + 1;
-
+        numeroVentasHechas++;
     }
-    
-      //Cantidad que queda del leche con cada Venta    
+
+    //Cantidad que queda del leche con cada Venta    
     public void ServirLecheFC() {
         lecheFC.setCapacidadActual(lecheFC.getCapacidadActual() - cantidadlecheFC);
         agua.setCapacidadActual(agua.getCapacidadActual() - cantidadAgua);
-        numeroVentasHechas = numeroVentasHechas + 1;
+        numeroVentasHechas++;
 
     }
-    
-        //Cantidad que queda de Azucar con cada Venta    
+
+    //Cantidad que queda de Azucar con cada Venta    
     public void ServirAzucar() {
         azucar.setCapacidadActual(azucar.getCapacidadActual() - cantidadAzucar);
-       
+
     }
 }
