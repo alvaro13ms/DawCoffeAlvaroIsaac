@@ -50,6 +50,12 @@ public class Menu {
 
             int opcion;
             do {
+
+                System.out.println("");
+                System.out.println("");
+                System.out.println("---------------------------------------------------------------------------------");
+                System.out.println("");
+
                 System.out.println("Que opción deseas hacer?\n"
                         + "1-Venta de los Productos\n"
                         + "2-Administración");
