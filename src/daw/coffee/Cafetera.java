@@ -273,6 +273,15 @@ public class Cafetera {
 
     }
 
+    public void comprobarEstadoGeneralCafeCortado() {
+
+        System.out.println("El depósito de Cafe Solo Cortado");
+        System.out.println("Capacidad Actual : " + getCafeCortado().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getCafeCortado().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getCafeCortado().getCapacidadUmbral());
+
+    }
+
     //Método toString
     @Override
     public String toString() {
