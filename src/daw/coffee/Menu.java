@@ -58,10 +58,11 @@ public class Menu {
 
                 System.out.println("Que opción deseas hacer?\n"
                         + "1-Venta de los Productos\n"
-                        + "2-Administración");
+                        + "2-Administración\n"
+                        + "3-Salir\n");
 
                 opcion = teclado.nextInt();
-            } while (opcion < 1 || opcion > 2);
+            } while (opcion < 1 || opcion > 3);
             //Switch para hacer una de las dos opociones elegidas
             switch (opcion) {
 
@@ -711,7 +712,10 @@ public class Menu {
                         }
                     }
                     break;
-
+                case 3:
+                    System.out.println("Saliendo...");
+                    repetir = false;
+                    break;
             }
         } while (repetir);
     }
