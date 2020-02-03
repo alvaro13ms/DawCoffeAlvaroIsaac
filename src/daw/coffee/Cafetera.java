@@ -246,14 +246,13 @@ public class Cafetera {
     }
 
     //Método que comprueba el estado general de cada componente de la cafetera
-    public String comprobarEstadoGeneral() {
+    public void comprobarEstadoGeneralAgua() {
 
-        String mensajeGeneral;
-        mensajeGeneral = agua.toString() + cafeSolo.toString() + cafeSoloLargo.toString() + cafeCortado.toString()
-                + cafeDescafeinado.toString() + chocolate.toString() + cafeLeche.toString()
-                + lecheFC.toString() + azucar.toString() + admin.toString();
+        System.out.println("El depósito de agua");
+        System.out.println("Capacidad Actual : " + getAgua().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getAgua().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getAgua().getCapacidadUmbral());
 
-        return mensajeGeneral;
     }
 
     //Método toString
