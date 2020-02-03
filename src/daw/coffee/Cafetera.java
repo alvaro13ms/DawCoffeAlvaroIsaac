@@ -282,6 +282,15 @@ public class Cafetera {
 
     }
 
+    public void comprobarEstadoGeneralCafeDescafeinado() {
+
+        System.out.println("El depósito de Cafe Descafeinado");
+        System.out.println("Capacidad Actual : " + getCafeDescafeinado().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getCafeDescafeinado().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getCafeDescafeinado().getCapacidadUmbral());
+
+    }
+
     //Método toString
     @Override
     public String toString() {
