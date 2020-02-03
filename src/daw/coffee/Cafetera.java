@@ -309,12 +309,12 @@ public class Cafetera {
 
     }
 
-    public void comprobarEstadoGeneralCafeLeche() {
+    public void comprobarEstadoGeneralAzucar() {
 
-        System.out.println("El depósito de Cafe Leche");
-        System.out.println("Capacidad Actual : " + getCafeLeche().getCapacidadActual());
-        System.out.println("Capacidad Máxima: " + getCafeLeche().getCapacidadMaxima());
-        System.out.println("CapacidadUmbral: " + getCafeLeche().getCapacidadUmbral());
+        System.out.println("El depósito de Azucar");
+        System.out.println("Capacidad Actual : " + getAzucar().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getAzucar().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getAzucar().getCapacidadUmbral());
 
     }
 
