@@ -248,10 +248,19 @@ public class Cafetera {
     //Método que comprueba el estado general de cada componente de la cafetera
     public void comprobarEstadoGeneralAgua() {
 
-        System.out.println("El depósito de agua");
+        System.out.println("El depósito de Agua");
         System.out.println("Capacidad Actual : " + getAgua().getCapacidadActual());
         System.out.println("Capacidad Máxima: " + getAgua().getCapacidadMaxima());
         System.out.println("CapacidadUmbral: " + getAgua().getCapacidadUmbral());
+
+    }
+
+    public void comprobarEstadoGeneralCafeSolo() {
+
+        System.out.println("El depósito de CafeSolo");
+        System.out.println("Capacidad Actual : " + getCafeSolo().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getCafeSolo().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getCafeSolo().getCapacidadUmbral());
 
     }
 
