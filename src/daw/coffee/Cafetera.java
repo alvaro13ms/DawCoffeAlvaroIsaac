@@ -300,6 +300,15 @@ public class Cafetera {
 
     }
 
+    public void comprobarEstadoGeneralCafeLeche() {
+
+        System.out.println("El depósito de Cafe Leche");
+        System.out.println("Capacidad Actual : " + getCafeLeche().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getCafeLeche().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getCafeLeche().getCapacidadUmbral());
+
+    }
+
     //Método toString
     @Override
     public String toString() {
