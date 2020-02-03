@@ -80,27 +80,27 @@ public class Deposito {
 
     //Método que rellena un depósito entero y
     //devuelve un mensaje monstrando que ha sido rellenado con éxito
-    public String rellenarDepositoEntero(String elemento) {
+    public void rellenarDepositoEntero(String elemento) {
 
         this.capacidadActual = this.capacidadMaxima;
-        return "El depósito de " + elemento + " ha sido rellenado entero";
+        System.out.println("El depósito de " + elemento + " ha sido rellenado entero");
     }
 
     //Método que rellena una cantidad fija en un depósito
     public void rellenarDepositoCantidad(int cantidad, String elemento) {
         if (this.capacidadActual + cantidad >= capacidadMaxima) {
             System.out.println("Se ha rellenado el depósito de " + elemento
-                    + "con " + cantidad);
+                    + " con " + cantidad);
             this.capacidadActual = capacidadMaxima;
 
         }
         if (cantidad > capacidadMaxima) {
             System.out.println("Se ha rellenado el depósito de " + elemento
-                    + "con " + cantidad);
+                    + " con " + cantidad);
             this.capacidadActual = capacidadMaxima;
         }
         System.out.println("Se ha rellenado el depósito de " + elemento
-                + "con " + cantidad);
+                + " con " + cantidad);
         this.capacidadActual = this.capacidadActual + cantidad;
     }
 
