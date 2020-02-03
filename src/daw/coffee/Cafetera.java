@@ -11,6 +11,7 @@ package daw.coffee;
  */
 public class Cafetera {
 
+    //Declaración de atributos 
     private Deposito agua;
     private Deposito cafeSolo;
     private Deposito cafeSoloLargo;
@@ -25,6 +26,7 @@ public class Cafetera {
     private UsuarioAdministrador admin;
     private static int numeroVentasHechas = 0;
 
+    //Atributos de la cantidad de cada componente de la cafetera
     private final int cantidadAgua = 80;
     private final int cantidadcafeSolo = 74;
     private final int cantidadCafeSoloLargo = 69;
@@ -35,6 +37,7 @@ public class Cafetera {
     private final int cantidadlecheFC = 75;
     private final int cantidadAzucar = 72;
 
+    //Constructor por defecto
     public Cafetera() {
         this.agua = new Deposito(800, 50, 500, "agua");
         this.cafeSolo = new Deposito(900, 50, 490, "Cafe Solo");
@@ -48,6 +51,7 @@ public class Cafetera {
 
     }
 
+    //Constructor parametrizado
     public Cafetera(Deposito agua, Deposito cafeSolo, Deposito cafeSoloLargo, Deposito cafeCortado, Deposito cafeDescafeinado, Deposito chocolate, Deposito cafeLeche, Deposito lecheFC, Deposito azucar, double dineroConsumidor, double dineroAcumulado, UsuarioAdministrador admin) {
         this.agua = agua;
         this.cafeSolo = cafeSolo;
@@ -63,6 +67,7 @@ public class Cafetera {
         this.admin = admin;
     }
 
+    //Métodos getters y setters
     public Deposito getAgua() {
         return agua;
     }
@@ -159,6 +164,7 @@ public class Cafetera {
         this.admin = admin;
     }
 
+    //Método que devuelve el número de ventas hechas
     public static int getNumeroVentasHechas() {
         return numeroVentasHechas;
     }
@@ -228,6 +234,7 @@ public class Cafetera {
 
     }
 
+    //Método que comprueba si algún depósito debe ser rellenado.
     public void comprobarDepositos(Deposito comprueba) {
 
         if (comprueba.getCapacidadActual() <= comprueba.getCapacidadUmbral()) {
@@ -238,6 +245,7 @@ public class Cafetera {
 
     }
 
+    //Método que comprueba el estado general de cada componente de la cafetera
     public String comprobarEstadoGeneral() {
 
         String mensajeGeneral;
@@ -248,6 +256,7 @@ public class Cafetera {
         return mensajeGeneral;
     }
 
+    //Método toString
     @Override
     public String toString() {
         return "Cafetera{" + "agua=" + agua + ", cafeSolo=" + cafeSolo + ", cafeSoloLargo=" + cafeSoloLargo + ", cafeCortado=" + cafeCortado + ", cafeDescafeinado=" + cafeDescafeinado + ", chocolate=" + chocolate + ", cafeLeche=" + cafeLeche + ", lecheFC=" + lecheFC + ", azucar=" + azucar + ", dineroConsumidor=" + dineroConsumidor + ", dineroAcumulado=" + dineroAcumulado + ", admin=" + admin + ", cantidadAgua=" + cantidadAgua + ", cantidadcafeSolo=" + cantidadcafeSolo + ", cantidadCafeSoloLargo=" + cantidadCafeSoloLargo + ", cantidadCafeCortado=" + cantidadCafeCortado + ", cantidadcafeDescafeinado=" + cantidadcafeDescafeinado + ", cantidadChocolate=" + cantidadChocolate + ", cantidadcafeLeche=" + cantidadcafeLeche + ", cantidadlecheFC=" + cantidadlecheFC + ", cantidadAzucar=" + cantidadAzucar + '}';
