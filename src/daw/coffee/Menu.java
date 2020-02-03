@@ -537,7 +537,22 @@ public class Menu {
 
                     if (opcionAdministrar == 2) {
                         Cafetera d = new Cafetera();
-                        d.comprobarEstadoGeneral();
+                        d.comprobarEstadoGeneralAgua();
+                        System.out.println("----------------------------------------");
+                        d.comprobarEstadoGeneralAzucar();
+                        System.out.println("----------------------------------------");
+                        d.comprobarEstadoGeneralCafeCortado();
+                        System.out.println("----------------------------------------");
+                        d.comprobarEstadoGeneralCafeDescafeinado();
+                        System.out.println("----------------------------------------");
+                        d.comprobarEstadoGeneralCafeSolo();
+                        System.out.println("----------------------------------------");
+                        d.comprobarEstadoGeneralCafeSoloLargo();
+                        System.out.println("----------------------------------------");
+                        d.comprobarEstadoGeneralChocolate();
+                        System.out.println("----------------------------------------");
+                        d.comprobarEstadoGeneralLecheFC();
+
                     }
 
                     if (opcionAdministrar == 3) {
