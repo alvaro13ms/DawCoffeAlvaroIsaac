@@ -73,7 +73,7 @@ public class Menu {
                         dinero = teclado.nextDouble();
                         System.out.println("--------------------");
                         if (dinero < this.LECHEFC) {
-                            System.out.println("NO as introducido el dinero minimo para comprar algún producto");
+                            System.out.println("NO has introducido el dinero minimo para comprar algún producto");
                             System.out.println("------------------------");
                         }
                     } while (dinero < this.LECHEFC);
@@ -104,7 +104,7 @@ public class Menu {
                             //Introducir el dinero necesario para comprar el cafe solo ó volver al menu
                             if (dinero < this.CAFESOLO) {
                                 do {
-                                    System.out.println("No as introducido suficiente dinero\n"
+                                    System.out.println("No has introducido suficiente dinero\n"
                                             + "1-Agregar dinero\n"
                                             + "2-Volver al menu");
                                     System.out.println("---------------------");
@@ -179,7 +179,7 @@ public class Menu {
                             //Introducir el dinero necesario para comprar el cafe solo Largo ó volver al menu
                             if (dinero < this.CAFESOLOLARGO) {
                                 do {
-                                    System.out.println("No as introducido suficiente dinero\n"
+                                    System.out.println("No has introducido suficiente dinero\n"
                                             + "1-Agregar dinero\n"
                                             + "2-Volver al menu");
                                     System.out.println("---------------------");
@@ -254,7 +254,7 @@ public class Menu {
                             //Introducir el dinero necesario para comprar el cafe con Leche ó volver al menu
                             if (dinero < this.CAFELECHE) {
                                 do {
-                                    System.out.println("No as introducido suficiente dinero\n"
+                                    System.out.println("No has introducido suficiente dinero\n"
                                             + "1-Agregar dinero\n"
                                             + "2-Volver al menu");
                                     System.out.println("---------------------");
@@ -329,7 +329,7 @@ public class Menu {
                             //Introducir el dinero necesario para comprar el cortado ó volver al menu
                             if (dinero < this.CORTADO) {
                                 do {
-                                    System.out.println("No as introducido suficiente dinero\n"
+                                    System.out.println("No has introducido suficiente dinero\n"
                                             + "1-Agregar dinero\n"
                                             + "2-Volver al menu");
                                     System.out.println("---------------------");
@@ -404,7 +404,7 @@ public class Menu {
 //Introducir el dinero necesario para comprar el chocolate ó volver al menu
                             if (dinero < this.CHOCOLATE) {
                                 do {
-                                    System.out.println("No as introducido suficiente dinero\n"
+                                    System.out.println("No has introducido suficiente dinero\n"
                                             + "1-Agregar dinero\n"
                                             + "2-Volver al menu");
                                     System.out.println("---------------------");
