@@ -291,6 +291,15 @@ public class Cafetera {
 
     }
 
+    public void comprobarEstadoGeneralChocolate() {
+
+        System.out.println("El depósito de Chocolate");
+        System.out.println("Capacidad Actual : " + getChocolate().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getChocolate().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getChocolate().getCapacidadUmbral());
+
+    }
+
     //Método toString
     @Override
     public String toString() {
