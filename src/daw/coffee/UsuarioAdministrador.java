@@ -11,19 +11,23 @@ package daw.coffee;
  */
 public class UsuarioAdministrador {
 
+    //Declaración de variables
     private String usuario;
     private String contrasenia;
 
+    //Constructor parametrizado
     public UsuarioAdministrador(String usuario, String contrasenia) {
         this.usuario = usuario;
         this.contrasenia = contrasenia;
     }
 
+    //Constructor por defecto
     public UsuarioAdministrador() {
-        this.usuario="daw";
-        this.contrasenia="daw";
+        this.usuario = "daw";
+        this.contrasenia = "daw";
     }
 
+//Métodos getters y setters
     public String getUsuario() {
         return usuario;
     }
@@ -40,12 +44,10 @@ public class UsuarioAdministrador {
         this.contrasenia = contrasenia;
     }
 
+    //Método toString
     @Override
     public String toString() {
         return "UsuarioAdministrador{" + "usuario=" + usuario + ", contrasenia=" + contrasenia + '}';
     }
-    
-    
-    
 
 }
