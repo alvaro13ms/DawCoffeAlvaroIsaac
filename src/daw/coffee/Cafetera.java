@@ -300,6 +300,15 @@ public class Cafetera {
 
     }
 
+    public void comprobarEstadoGeneralLecheFC() {
+
+        System.out.println("El depósito de Leche FC");
+        System.out.println("Capacidad Actual : " + getLecheFC().getCapacidadActual());
+        System.out.println("Capacidad Máxima: " + getLecheFC().getCapacidadMaxima());
+        System.out.println("CapacidadUmbral: " + getLecheFC().getCapacidadUmbral());
+
+    }
+
     public void comprobarEstadoGeneralCafeLeche() {
 
         System.out.println("El depósito de Cafe Leche");
